@@ -24,25 +24,30 @@ interface RouteProps {
 }
 
 const routeList: RouteProps[] = [
+
   {
-    href: "#features",
-    label: "Features",
+    href: "#introduction",
+    label: "Introduction",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#use-cases",
+    label: "Use Cases",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
+    href: "#algorithms",
+    label: "Algorithms",
   },
   {
-    href: "#faq",
-    label: "FAQ",
+    href: "#publications",
+    label: "Publications",
   },
-   {
-    href: "#team",
-    label: "Team",
+  {
+    href: "#about",
+    label: "About",
+  },
+  {
+    href: "#contact",
+    label: "Contact",
   },
 ];
 
@@ -59,7 +64,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
-              ShadcnUI/React
+              Factory Layout Planning
             </a>
           </NavigationMenuItem>
 
@@ -131,7 +136,7 @@ export const Navbar = () => {
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
+            {/* <a
               rel="noreferrer noopener"
               href="https://github.com/leoMirandaa/shadcn-landing-page.git"
               target="_blank"
@@ -139,7 +144,7 @@ export const Navbar = () => {
             >
               <GitHubLogoIcon className="mr-2 w-5 h-5" />
               Github
-            </a>
+            </a> */}
 
             <ModeToggle />
           </div>
