@@ -29,23 +29,22 @@ export const Hero = () => {
         <div className="space-y-4 md:space-y-0 md:space-x-4">
           <Button className="w-full md:w-1/3">Get Started</Button>
 
-          {/* <a
-            rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
-          </a> */}
         </div>
       </div>
 
 
       {/* Shadow effect */}
-      <div className="shadow"></div>
+      {/* <div className="shadow"> */}
+      <div>
+        <img
+          src="/assets/logos/NXTGEN.jpg"
+          alt="Hero Image"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
     </section>
   );
-};
+}
+
+
+
