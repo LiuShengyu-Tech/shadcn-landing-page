@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Linkedin, Mail ,School} from "lucide-react";
 
 interface TeamProps {
   imageUrl: string;
@@ -23,71 +23,63 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "/assets/photos/shengyu.png",
+    name: "Shengyu Liu",
+    position: "PhD Candidate",
     socialNetworks: [
+       {
+        name: "Mail",
+        url: "mailto:s.liu-4@utwente.nl",
+      },
+      {
+        name: "School",
+        url: "https://people.utwente.nl/s.liu-4",
+      },
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/shengyu-liu-038502195/",
       },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+     
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
-    position: "Tech Lead",
+    imageUrl: "/assets/photos/sipke.jpg",
+    name: "Sipke Hoekstra",
+    position: "Assistant Professor",
     socialNetworks: [
+       {
+        name: "Mail",
+        url: "mailto:s.hoekstra@utwente.nl",
+      },
+      {
+        name: "School",
+        url: "https://people.utwente.nl/s.hoekstra",
+      },
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/sipke-hoekstra-361a9856/",
       },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
+     
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
-    socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+    imageUrl: "/assets/photos/sebastian.jpg",
+    name: "Sebastian Thiede",
+    position: "Full Professor Chair of Manufacturing Systems",
 
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/",
-      },
-    ],
-  },
-  {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
     socialNetworks: [
       {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        name: "Mail",
+        url: "mailto:s.thiede@utwente.nl",
       },
+ {
+        name: "School",
+        url: "https://people.utwente.nl/s.thiede",
+      },
+      
       {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/sebastian-thiede-42a7802b/?locale=en",
       },
     ],
   },
@@ -98,38 +90,37 @@ export const Team = () => {
     switch (iconName) {
       case "Linkedin":
         return <Linkedin size="20" />;
-
-      case "Facebook":
-        return <Facebook size="20" />;
-
-      case "Instagram":
-        return <Instagram size="20" />;
+      case "Mail":
+        return <Mail size="20" />;
+      case "School":
+        return <School size="20" />;
     }
   };
 
   return (
     <section
-      id="team"
-      className="container py-24 sm:py-32"
+      id="contact"
+      className="container py-24 sm:py-32 text-center"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Our Dedicated{" "}
+          Contact {" "}
         </span>
-        Crew
+        Information
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        University of Twente | Faculty of Engineering Technology | Dept. of Design, Production & Management(DPM)
+        Chair of Manufacturing System
+
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10 justify-items-center">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
               key={name}
-              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center"
+              className="bg-muted/50 relative mt-8 flex flex-col justify-center items-center w-80"
             >
               <CardHeader className="mt-8 flex justify-center items-center pb-2">
                 <img
@@ -144,7 +135,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p>UT-ET-DPM-MS</p>
               </CardContent>
 
               <CardFooter>
