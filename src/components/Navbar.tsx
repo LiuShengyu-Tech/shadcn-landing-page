@@ -34,6 +34,10 @@ const routeList: RouteProps[] = [
     label: "Collaborators",
   },
   {
+     href: "#publications",
+    label: "Publications",
+  },
+  {
     href: "#gd_features",
     label: "Features",
   },

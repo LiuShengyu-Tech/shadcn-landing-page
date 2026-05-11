@@ -12,6 +12,7 @@ import { ScrollToTop } from "./components/ScrollToTop";
 // import { Services } from "./components/Services";
 import { Sponsors } from "./components/Sponsors";
 import { Team } from "./components/Team";
+import { Publications } from "./components/Publications";
 // import { Testimonials } from "./components/Testimonials";
 // import { HeroCards } from "./components/HeroCards";
 import "./App.css";
@@ -24,6 +25,7 @@ function App() {
       <Sponsors />
       {/* <About /> */}
       {/* <HowItWorks /> */}
+      <Publications />
       <GD_Features />
       {/* <Services /> */}
       {/* <Cta /> */}
